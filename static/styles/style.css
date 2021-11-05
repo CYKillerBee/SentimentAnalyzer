@@ -1,0 +1,26 @@
+ .centered {
+        position: relative;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        color: black;
+      }
+
+ p {
+        color: #115;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        text-justify: inter-word;
+   }
+
+ .button{
+   position: relative;
+   margin: 20px 50px;
+ }
+
+ .output{
+  color: blue;
+   font-size: 24px;
+ }
