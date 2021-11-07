@@ -24,31 +24,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('view_analysis') }}">Analysis</a>
                     </li>
+                     <li class="nav-item ">
+                        <a class="nav-link" href="{{ url_for('view_data') }}">Data</a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
        <div class="jumbotron">
-           <div class="container-form">
-                 <div class="centered">
-             <h2>Sentiment Analyzer </h2>
-                 <form method="POST" onSubmit="return validate();" class="form-floating">
-                     <p class="desc">
-                   Type a text or sentence, click on the predict button and wait for the sentiment prediction.
+           <div class="centered">
+         <h2>Sentiment Analyzer </h2>
+               <form method="POST" action="/result" >
+                   <p class="desc">
+                       Type a text or sentence, click on the predict button and wait for the sentiment prediction.
                    </p>
-                    <input type="text" name="text" class="form-control" id="floatingInput" placeholder="Enter sentence/text here">
-                <div class="button">
-                 <input type="submit" class="btn btn-primary" id="btn" value="Predict" onclick="form.submit()" >
-                 </div>
-                 </form>
-                <h2 class="output">Sentiment Result:{{result}}</h2>
-                      </div>
-        </div>
+                   <input type="text" name="text" class="form-control" id="floatingInput" placeholder="Enter sentence/text here">
+                   <div class="button">
+                       <input type="submit" class="btn btn-primary" id="btn" value="Predict"  >
+                   </div>
+               </form>
+
+               </div>
 
         </div>
 
-
-        </div>
     </div>
 
 
