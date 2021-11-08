@@ -1,7 +1,6 @@
 import re
 import string
 
-
 def text_cleaner(textData):
     # remove tab, new line, ans back slice
     textData = textData.replace('\\t', " ").replace('\\n', " ").replace('\\u', " ").replace('\\', "")
@@ -21,5 +20,6 @@ def text_cleaner(textData):
     textData = textData.strip()
     # remove multiple whitespace into single whitespace
     textData = re.sub('\s+', ' ', textData)
+
 
     return textData

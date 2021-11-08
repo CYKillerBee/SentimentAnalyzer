@@ -41,6 +41,7 @@
                 <tr class="d-flex">
                   <th class="col-sm-3">Entered Texts</th>
                   <th class="col-sm-2">Sentiment</th>
+                    <th class="col-sm-2">Emotion</th>
                 </tr>
               </thead>
              <tbody>
@@ -48,6 +49,7 @@
                 <tr class="d-flex">
                   <td class="col-sm-3">{{rows["text"] }}</td>
                    <td class="col-sm-2">{{ rows["sentiment"] }}</td>
+                    <td class="col-sm-2">{{ rows["emotion"] }}</td>
                 </tr>
             {% endfor %}
             </tbody>
